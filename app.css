@@ -53,3 +53,11 @@ Header
     display: flex;
     flex-wrap: wrap;
 }
+
+/*
+Detailanzeige eines Freundes
+*/
+#detailanzeige {
+    margin: 15% 10%;
+    background: white;
+}
