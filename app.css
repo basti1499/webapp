@@ -1,10 +1,18 @@
 /*
-Body
+Allgemeines
 */
 
 body {
-    background: blue;
+    /*background: blue;*/
+    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url("Bilder/team.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
     margin: 0;
+}
+
+.hidden {
+    display: none;
 }
 
 /*
@@ -14,9 +22,10 @@ Header
 /*Generelles Styling der Kopfleiste*/
 .navbar {
     overflow: hidden;
-    background: darkblue;
+    /*background: darkblue;*/
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
     font-family: sans-serif;
-    padding: 20px 20px;
+    padding: 1% 10%;
 }
 
 /*Logo Schriftzug*/
@@ -25,7 +34,7 @@ Header
     color: white;
     text-align: center;
     text-decoration: none;
-    font-size: 40px;
+    font-size: 50px;
     font-weight: bold;
 }
 
@@ -58,6 +67,41 @@ Header
 Detailanzeige eines Freundes
 */
 #detailanzeige {
-    margin: 15% 10%;
+
+}
+
+/*Klasse für den Weißen Hintergrund*/
+.page {
+    margin: 5% 10%;
+    background: linear-gradient(rgba(255, 255, 255, 0.9),rgba(255, 255, 255, 0.9));
+    padding: 5%;
+}
+
+/*Container für die Daten des Freundes (Vorname, Nachname, etc.)*/
+.infos {
+    display: inline-block;
+    width: 66%;
+}
+
+.infos tr {
+
+}
+
+.infos td {
+    font-size: 30px;
+    font-family: sans-serif;
+    font-weight: bold;
+    padding: 15px;
+}
+
+/*Container für das Bild des Freundes*/
+.portrait {
+    display: inline-block;
+    width: 33%;
+}
+
+.portrait img {
+    width: 100%;
+    border: 10px solid black;
     background: white;
 }
