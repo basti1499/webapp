@@ -1,0 +1,55 @@
+/*
+Body
+*/
+
+body {
+    background: blue;
+    margin: 0;
+}
+
+/*
+Header
+*/
+
+/*Generelles Styling der Kopfleiste*/
+.navbar {
+    overflow: hidden;
+    background: darkblue;
+    font-family: sans-serif;
+    padding: 20px 20px;
+}
+
+/*Logo Schriftzug*/
+.navbar a.logo {
+    float: left;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+/*Settings Icon*/
+.navbar img {
+    max-width: 40px;
+    max-height: 40px;
+}
+
+.navbar a.settings {
+    margin: 5px 15px;
+}
+
+/*Suchleiste*/
+.navbar input[type=text] {
+    padding: 6px;
+    border: none;
+    font-size: 17px;
+    width: 250px;
+}
+
+/*Container um Suche und Settingsicon rechts zu haben*/
+.navbar-right {
+    float: right;
+    display: flex;
+    flex-wrap: wrap;
+}
