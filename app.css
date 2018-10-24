@@ -75,6 +75,7 @@ Detailanzeige eines Freundes
     margin: 5% 10%;
     background: linear-gradient(rgba(255, 255, 255, 0.9),rgba(255, 255, 255, 0.9));
     padding: 5%;
+    width: 80%;
 }
 
 /*Container für die Daten des Freundes (Vorname, Nachname, etc.)*/
