@@ -106,3 +106,25 @@ Detailanzeige eines Freundes
     border: 10px solid black;
     background: white;
 }
+
+/*Container für den Eintrag der Freunde*/
+input {
+    background: transparent;
+    font-size: 25px;
+    border: none;
+    border-bottom: 2px solid #000000;
+}
+
+.addpicture{
+    text-align: center;
+
+}
+.page img {
+    display: block;
+    margin-top: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+
+
+}
