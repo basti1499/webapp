@@ -24,8 +24,11 @@ Header
     overflow: hidden;
     /*background: darkblue;*/
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
-    font-family: sans-serif;
+    /*font-family: sans-serif;*/
+    color: white;
     padding: 1% 10%;
+    font: 400 100px/1.2 'Leckerli One', Helvetica, sans-serif;
+    text-shadow: 2px 2px 0px rgba(0,0,0,0.2), 4px 4px 8px rgba(0,0,0,0.2);
 }
 
 /*Logo Schriftzug*/
