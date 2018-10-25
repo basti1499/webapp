@@ -82,6 +82,7 @@ Detailanzeige eines Freundes
     background: linear-gradient(rgba(255, 255, 255, 0.9),rgba(255, 255, 255, 0.9));
     padding: 5%;
     width: 80%;
+    overflow: auto;
 }
 
 /*Schriftart*/
@@ -98,7 +99,7 @@ Detailanzeige eines Freundes
 
 @media (max-width: 767.98px)  {
     .infos span {
-        float: none;
+        /*float: none;*/
     }
     .infos:hover {
         background: linear-gradient(rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.2));
@@ -114,8 +115,7 @@ Detailanzeige eines Freundes
 
 /*Container für das Bild des Freundes*/
 .portrait {
-    float: right;
-    max-width: 80%;
+    max-width: 100%;
     border: 10px solid black;
     background: white;
 }
