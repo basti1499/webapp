@@ -63,6 +63,9 @@ Header
     flex-wrap: wrap;
 }
 
+
+
+
 /*
 Detailanzeige eines Freundes
 */
@@ -78,37 +81,55 @@ Detailanzeige eines Freundes
     width: 80%;
 }
 
-/*Container für die Daten des Freundes (Vorname, Nachname, etc.)*/
-.infos {
-    display: inline-block;
-    width: 66%;
-}
-
-.infos tr {
-
-}
-
-.infos td {
-    font-size: 30px;
+/*Schriftart*/
+.infos p {
+    font-size: 25px;
     font-family: sans-serif;
     font-weight: bold;
-    padding: 15px;
+    width: 100%;
+}
+
+.infos span {
+    float: right;
+}
+
+@media (max-width: 767.98px)  {
+    .infos span {
+        float: none;
+    }
+    .infos:hover {
+        background: linear-gradient(rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.2));
+        border-radius: 5px;
+        padding:
+    }
+}
+
+/*Container für die Daten des Freundes (Vorname, Nachname, etc.)*/
+.infos {
+    margin: 10px;
 }
 
 /*Container für das Bild des Freundes*/
 .portrait {
-    display: inline-block;
-    width: 33%;
-}
-
-.portrait img {
-    width: 100%;
+    float: right;
+    max-width: 80%;
     border: 10px solid black;
     background: white;
 }
 
+
+
+
+
+
+
+
+/*
+Seite zum Hinzufügen eines neuen Freundes
+*/
+
 /*Container für den Eintrag der Freunde*/
-input {
+/*input {
     background: transparent;
     font-size: 25px;
     border: none;
@@ -127,4 +148,4 @@ input {
     width: 60%;
 
 
-}
+}*/
