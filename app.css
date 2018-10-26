@@ -120,6 +120,19 @@ Detailanzeige eines Freundes
     background: white;
 }
 
+#detailanzeige .backbutton {
+    text-align: center;
+    margin: 20px;
+    font-size: 25px;
+}
+
+#detailanzeige .backbutton a {
+    border: 2px solid black;
+    padding: 5px 15px;
+    text-decoration: none;
+    color: black;
+}
+
 
 
 

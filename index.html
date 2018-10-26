@@ -1,3 +1,4 @@
+<<<<<<< current
 <!DOCTYPE html>
 <html>
     <head>
@@ -93,15 +94,20 @@
                     </div>
                     <div class="col-lg-4">
                         <div class="row">
-                            <div class="col-lg-1">
-
-                            </div>
-                            <div class="col-lg">
+                            <div class="col-lg-1 col-xs-1"></div>
+                            <div class="col-lg col-xs">
                             <img class="portrait" src="Bilder/boy.png" alt="Profilbild">
                             </div>
-                            <div class="col-lg-1">
-
+                            <div class="col-lg-1 col-xs-1"></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-1 col-xs-1"></div>
+                            <div class="col-lg col-xs">
+                            <p class="backbutton">
+                                <a href="#">Zurück</a>
+                            </p>
                             </div>
+                            <div class="col-lg-1 col-xs-1"></div>
                         </div>
                     </div>
                 </div>
@@ -170,3 +176,136 @@
         </main>
     </body>
 </html>
+=======
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+
+        <!--Bootstrap-->
+        <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+        <script src="bootstrap/js/bootstrap.min.js"></script>
+
+        <!--Eigene Stylesheets-->
+        <link rel="stylesheet" href="app.css" />
+
+        <!--Eigene Scripts-->
+
+
+        <!--Website Titel-->
+        <title>Mein Freundebuch</title>
+    </head>
+    <body>
+        <div class="navbar">
+            <a class="logo" href="#home">Mein Freundebuch</a>
+            <div class="navbar-right">
+                <input type="text" placeholder="Suche..." />
+                <a class="settings" href="#settings"><img src="Bilder/einstellungen.png" /></a>
+            </div>
+        </div>
+        <main>
+            <!-- GIT TEST PUSH HALIL #DackelStyle -->
+            <!--leck mi am arsch-->
+            <!--HIER KOMMT DER CONTENT REIN-->
+
+            <!--Seite zur Detailanzeige von Informationen zu einem Freund-->
+            <div id="detailanzeige" class="container-fluid page hidden">
+                <div class="row">
+                    <div class="col-md-8">
+                        <div class="row infos">
+                            <div class="col-md-4">
+                                <p>Vorname:</p>
+                            </div>
+                            <div class="col-md-8">
+                                <p><span>Albert</span></p>
+                            </div>
+                        </div>
+                        <div class="row infos">
+                            <div class="col-md-4">
+                                <p>Nachname:</p>
+                            </div>
+                            <div class="col-md-8">
+                                <p><span>Einstein</span></p>
+                            </div>
+                        </div>
+                        <div class="row infos">
+                            <div class="col-md-4">
+                                <p>Alter:</p>
+                            </div>
+                            <div class="col-md-8">
+                                <p><span>123</span></p>
+                            </div>
+                        </div>
+                        <div class="row infos">
+                            <div class="col-md-4">
+                                <p>Email:</p>
+                            </div>
+                            <div class="col-md-8">
+                                <p><span>albert.einstein@mail.de</span></p>
+                            </div>
+                        </div>
+                        <div class="row infos">
+                            <div class="col-md-4">
+                                <p>Adresse:</p>
+                            </div>
+                            <div class="col-md-8">
+                                <p><span>lulweg 1</span></p>
+                            </div>
+                        </div>
+                        <div class="row infos">
+                            <div class="col-md-4">
+                                <p>Telefonnummer:</p>
+                            </div>
+                            <div class="col-md-8">
+                                <p><span>0123 456 789</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <img class="portrait" src="Bilder/boy.png" alt="Profilbild">
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Eintragsseite -->
+            <div class="container page hidden">
+                <div class="row">
+                    <div class="col-8 infos">
+                        <table>
+                            <tr>
+                                <td>Vorname:</td>
+                                <td align="right"><input type="text" id="firstname" name="firstname" required/></td>
+                            </tr>
+                            <tr>
+                                <td>Nachname:</td>
+                                <td align="right"><input type="text" id="surname" name="surname" required/></td>
+                            </tr>
+                            <tr>
+                                <td>Alter:</td>
+                                <td align="right"><input type="number" id="age" name="age" required/></td>
+                            </tr>
+                            <tr>
+                                <td>Email:</td>
+                                <td align="right"><input type="text" id="email" name="email" required/></td>
+                            </tr>
+                            <tr>
+                                <td>Adresse:</td>
+                                <td align="right"><input type="text" id="address" name="address" required/></td>
+                            </tr>
+                            <tr>
+                                <td>Telefonnummer:</td>
+                                <td align="right"><input type="number" id="phone" name="phone" required/></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="col-4 addpicture">
+                        <img src="Bilder/boy.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>
+>>>>>>> before discard
