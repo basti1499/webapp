@@ -27,15 +27,15 @@
             </div>
         </div>-->
         <nav class="navbar navbar-dark bg-dark">
-            <a class="navbar-brand">Mein Freundebuch</a>
+            <a class="navbar-brand logo">Mein Freundebuch</a>
             <form class="form-inline">
                 <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                <a class="settings" href="#settings"><img src="Bilder/einstellungen.png" /></a>
+                <!--<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>-->
             </form>
         </nav>
         <main>
-            <!-- GIT TEST PUSH HALIL #DackelStyle -->
-            <!--leck mi am arsch-->
+
             <!--HIER KOMMT DER CONTENT REIN-->
 
 
@@ -43,7 +43,7 @@
             <div class="container-fluid page" id="uebersicht">
               <h1>Hier findest du deine Freunde :)</h1>
               <div class="row" id="freunde">
-        
+
                 <div class="col-lg-3" id="cards">
                   <div class="rahmen">
                      <img class="polaroid" src="Bilder/boy.png" alt="Profilbild">
@@ -157,60 +157,75 @@
             <!-- Eintragsseite -->
             <div id="eintragsseite" class="container-fluid page ">
                 <div class="row">
-                    <div class="col-md-8">
+                    <div class="col-lg-8">
                         <div class="row infos">
-                            <div class="col-md-4">
+                            <div class="col-lg-4">
                                 <p>Vorname:</p>
                             </div>
-                            <div class="col-md-8">
+                            <div class="col-lg-8">
                             <p><span><input type="text" id="firstname" name="firstname" required/></span></p>
                             </div>
                         </div>
                         <div class="row infos">
-                            <div class="col-md-4">
+                            <div class="col-lg-4">
                                 <p>Nachname:</p>
                             </div>
-                            <div class="col-md-8">
+                            <div class="col-lg-8">
                                 <p><span><input type="text" id="surname" name="surname" required/></span></p>
                             </div>
                         </div>
                         <div class="row infos">
-                            <div class="col-md-4">
+                            <div class="col-lg-4">
                                 <p>Alter:</p>
                             </div>
-                            <div class="col-md-8">
-                                <p><span><input type="number" id="age" name="age" required/></span></p>
+                            <div class="col-lg-8">
+                                <p><span><input type="text" id="age" name="age" required/></span></p>
                             </div>
                         </div>
                         <div class="row infos">
-                            <div class="col-md-4">
+                            <div class="col-lg-4">
                                 <p>Email:</p>
                             </div>
-                            <div class="col-md-8">
+                            <div class="col-lg-8">
                                 <p><span><input type="text" id="email" name="email" required/></span></p>
                             </div>
                         </div>
                         <div class="row infos">
-                            <div class="col-md-4">
+                            <div class="col-lg-4">
                                 <p>Adresse:</p>
                             </div>
-                            <div class="col-md-8">
+                            <div class="col-lg-8">
                                 <p><span><input type="text" id="address" name="address" required/></span></p>
                             </div>
                         </div>
                         <div class="row infos">
-                            <div class="col-md-4">
+                            <div class="col-lg-4">
                                 <p>Telefonnummer:</p>
                             </div>
-                            <div class="col-md-8">
-                                <p><span><input type="number" id="phone" name="phone" required/></span></p>
+                            <div class="col-lg-8">
+                                <p><span><input type="text" id="phone" name="phone" required/></span></p>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4">
-                        <img class="portrait" src="Bilder/boy.png" alt="Profilbild">
-
+                    <div class="col-lg-4">
+                        <div class="row">
+                            <div class="col-lg-1 col-xs-1"></div>
+                            <div class="col-lg col-xs">
+                            <img class="portrait" src="Bilder/boy.png" alt="Profilbild">
+                            </div>
+                            <div class="col-lg-1 col-xs-1"></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-1 col-xs-1"></div>
+                            <div class="col-lg col-xs">
+                            <p class="uploadbutton">
+                                <a href="#">Bild hochladen</a>
+                            </p>
+                            </div>
+                            <div class="col-lg-1 col-xs-1"></div>
+                        </div>
                     </div>
+
                 </div>
             </div>
 
