@@ -145,12 +145,28 @@ Detailanzeige eines Freundes
 
 
 
+.polaroid {
+  border: 10px solid black;
+  background: white;
+  max-width: 100%
+}
+.rahmen{
+  margin-top: 10%;
+  padding: 10% 10% 35% 10%;
+  border: 10px solid grey;
+  background: white;
+}
+
+
+
+
 
 /*
 Seite zum Hinzufügen eines neuen Freundes
 */
 
 /*Container für den Eintrag der Freunde*/
+/*
 input {
     background: transparent;
     font-size: 25px;
