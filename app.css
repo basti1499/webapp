@@ -66,7 +66,13 @@ Header
     flex-wrap: wrap;
 }
 
-
+/*
+Übersicht der Freundes
+*/
+#uebersicht{
+  background: transparent;
+  color: white;
+}
 
 
 /*
@@ -120,6 +126,19 @@ Detailanzeige eines Freundes
     background: white;
 }
 
+#detailanzeige .backbutton {
+    text-align: center;
+    margin: 20px;
+    font-size: 25px;
+}
+
+#detailanzeige .backbutton a {
+    border: 2px solid black;
+    padding: 5px 15px;
+    text-decoration: none;
+    color: black;
+}
+
 
 
 
@@ -132,7 +151,7 @@ Seite zum Hinzufügen eines neuen Freundes
 */
 
 /*Container für den Eintrag der Freunde*/
-/*input {
+input {
     background: transparent;
     font-size: 25px;
     border: none;
@@ -145,10 +164,11 @@ Seite zum Hinzufügen eines neuen Freundes
 }
 .page img {
     display: block;
-    margin-top: 40%;
+    margin-top:40%
     margin-left: auto;
     margin-right: auto;
     width: 60%;
+}
 
 
 }*/
