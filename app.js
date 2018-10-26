@@ -26,5 +26,8 @@ class App {
             }
         ];
     }
-
+    function myFunction() {
+      var element = document.getElementById("visitenkartePLUS");
+      element.classList.add("mystyle");
+    }
 }
