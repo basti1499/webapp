@@ -136,7 +136,7 @@ Detailanzeige eines Freundes
 
 #detailanzeige .backbutton a {
     border: 2px solid black;
-    border-radius: 25px; 
+    border-radius: 25px;
     padding: 5px 15px;
     text-decoration: none;
     color: black;
@@ -177,6 +177,12 @@ Detailanzeige eines Freundes
   padding: 10% 10% 35% 10%;
   border: 10px solid grey;
   background: white;
+}
+#plus{
+  max-width: 90px;
+  max-height: 90px;
+  margin-top: 60%;
+  margin-left: 35%
 }
 
 
