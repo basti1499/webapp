@@ -17,5 +17,29 @@ class App {
                 satz: "I bims, albert vong einstein her"
             ]
     }
+    // Ja ok, ich hab die falsche Aufgabe gemacht xD            
+    //variablen deklarieren
+    var firstname = getElementById("firstname");
+    var surname = getElementById("surname");
+    var age = getElementById("age");
+    var email = getElementById("emnail");
+    var adress = getElementById("adress");
+    var phone = getElementById("phone");
+    var sentence = getElementById("sentence");
+
+    // submit-button
+    submit.addEventListener("click", addFreund);
+
+    //Funktion zum adden von
+    function addFreund() {
+      if (firstname === "" || surname === "" || age === "" || email === ""
+          || adress === "" || phone === "" || sentence === ""){
+            alter.("Du musst alle Felder ausfüllen");
+          }
+      else (
+        var text = firstname.value;
+
+      )
+    }
 
 }
