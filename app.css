@@ -159,6 +159,19 @@ Detailanzeige eines Freundes
     text-decoration: none;
     color: black;
 }
+#eintragsseite .submitbutton {
+    text-align: center;
+    margin: 20px;
+    font-size: 25px;
+}
+
+#eintragsseite .submitbutton a {
+    border: 2px solid black;
+    border-radius: 25px;
+    padding: 5px 15px;
+    text-decoration: none;
+    color: black;
+}
 
 
 
