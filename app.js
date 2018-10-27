@@ -1,4 +1,4 @@
-"use strict";
+
 
 /*
 Grundsystem der Anwendung
@@ -32,8 +32,31 @@ Grundsystem der Anwendung
     // }
     //
     let freund = ["karl","napf","47","knapf@gmx.de","sandweg1","8323"];
-    let dElement = document.createElement("div")
+    console.log(freund);
 
+    // DackelStyle
+  //  let dackelStyle = () => {
+      let newDiv = document.createElement("Label");
+      newDiv.className = "col-lg-3";
+      newDiv.id = "cards";
+      // hier kommt noch die Referenz auf den eingegebenen Namen in die Methode.
+      let newDivText = document.createTextNode(freund[0]+" "+freund[1]);
+      console.log(newDivText);
+      newDiv.appendChild(newDivText);
+
+      let vorhandenTemp = document.querySelector("template");
+      let pBild = document.querySelector("template .polaroid");
+      let vorhandenTemp.insertBefore(newDiv,pBild);
+
+  //  }
+
+
+
+
+
+
+
+    // Hier wird das Polaroid erstellt
     let erstellePolaroid = () => {
 
       let temp, item, a, i;
