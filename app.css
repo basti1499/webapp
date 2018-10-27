@@ -187,10 +187,25 @@ Detailanzeige eines Freundes
 }
 .rahmen{
   margin-top: 10%;
-  padding: 10% 10% 35% 10%;
+  padding: 10% 10% 15% 10%;
   border: 10px solid grey;
   background: white;
 }
+#name{
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 1.55em;
+  color: black;
+  margin-bottom: 5%;
+}
+#name2{
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 1.55em;
+  color: black;
+  margin-top: 10%;
+}
+
 #plus{
   max-width: 90px;
   max-height: 90px;
@@ -199,7 +214,7 @@ Detailanzeige eines Freundes
 }
 #plus:hover{
   border: 5px solid white;
-  border-radius: 35px; 
+  border-radius: 35px;
 }
 
 
