@@ -36,18 +36,45 @@ Grundsystem der Anwendung
 
     // DackelStyle
   // let dackelStyle = () => {
-      let newDiv = document.createElement("Label");
+      let newDiv = document.createElement("div");
       newDiv.className = "col-lg-3";
       newDiv.id = "cards";
+
+        let newAnk = document.createElement("a");
+        newAnk.href = "bestimmterFreund";
+
+        let newDiv2 = document.createElement("div");
+        newDiv2.class = "rahmen";
+
+          let newLabel = document.createElement("label");
+          newLabel.id = "name";
+
+          let newBild = document.createElement("img");
+          newBild.className = "polaroid";
+          newBild.src = "Bilder/boy.png";
+
+          //nun alles Verschachteln und anfügen
+          newLabel.appendChild(newBild);
+          newDiv2.appendChild(newLabel);
+          newAnk.appendChild(newDiv2);
+          newDiv.appendChild(newAnk);
+
+          console.log(newDiv);
+
+
+
       // hier kommt noch die Referenz auf den eingegebenen Namen in die Methode.
       let newDivText = document.createTextNode(freund[0]+" "+freund[1]);
       console.log(newDivText);
-      newDiv.appendChild(newDivText);
-
-      let pola = document.querySelector("template .rahmen");
-      let pBild = document.querySelector("template .polaroid");
       console.log(newDiv);
-      let pola.insertBefore(newDiv,pBild);
+      newDiv.appendChild(newDivText);
+      document.getElementById()
+
+      let pola = document.querySelector("#neuerFreund");
+      console.log(pola);
+      let pBild = document.querySelector(".polar");
+      console.log(pBild);
+      let .polar.insertBefore(newDiv,pBild);
 
   // }
 
@@ -57,41 +84,30 @@ Grundsystem der Anwendung
 
 
 
-    // Hier wird das Polaroid erstellt
-    let erstellePolaroid = () => {
-
-      let temp, item, a, i;
-      temp = document.getElementsByTagName("template")[3];
-      item = temp.content.querySelector("label");
-
-      for(i = 0; i< 2; i++){
-        a = document.importNode(item,true);
-        a.textContent += freund[i];
-        document.body.appendChild(a);
-      }
-
-    }
-
-
-
-
-
-
-
-
+    // // Hier wird das Polaroid erstellt
+    // let erstellePolaroid = () => {
     //
-    // //variablen von visitenkarte deklarieren
-    // var firstname = getElementById("firstname");
-    // var surname = getElementById("surname");
-    // var age = getElementById("age");
-    // var email = getElementById("emnail");
-    // var adress = getElementById("adress");
-    // var phone = getElementById("phone");
-    // var sentence = getElementById("sentence");
-    // //Polaroids
+    //   let temp, item, a, i;
+    //   temp = document.getElementsByTagName("template")[3];
+    //   item = temp.content.querySelector("label");
     //
+    //   for(i = 0; i< 2; i++){
+    //     a = document.importNode(item,true);
+    //     a.textContent += freund[i];
+    //     document.body.appendChild(a);
+    //   }
+    //
+    // }
+
+
+
+
+
+
+
+
     // submit-button
-    submit.addEventListener("click", addFreund);
+  //  submit.addEventListener("click", addFreund);
     //
     // //Funktion zum adden von
     // function addFreund() {
