@@ -35,7 +35,7 @@ Grundsystem der Anwendung
     console.log(freund);
 
     // DackelStyle
-  //  let dackelStyle = () => {
+  // let dackelStyle = () => {
       let newDiv = document.createElement("Label");
       newDiv.className = "col-lg-3";
       newDiv.id = "cards";
@@ -44,11 +44,12 @@ Grundsystem der Anwendung
       console.log(newDivText);
       newDiv.appendChild(newDivText);
 
-      let vorhandenTemp = document.querySelector("template");
+      let pola = document.querySelector("template .rahmen");
       let pBild = document.querySelector("template .polaroid");
-      let vorhandenTemp.insertBefore(newDiv,pBild);
+      console.log(newDiv);
+      let pola.insertBefore(newDiv,pBild);
 
-  //  }
+  // }
 
 
 
