@@ -17,7 +17,22 @@ class App {
                 satz: "I bims, albert vong einstein her"
             ]
     }
-    // Ja ok, ich hab die falsche Aufgabe gemacht xD            
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+    // Ja ok, ich hab die falsche Aufgabe gemacht xD
     //variablen deklarieren
     var firstname = getElementById("firstname");
     var surname = getElementById("surname");
@@ -38,7 +53,7 @@ class App {
           }
       else (
         var text = firstname.value;
-
+        // hier noch die variable übergeben....
       )
     }
 

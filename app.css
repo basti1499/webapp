@@ -184,7 +184,10 @@ Detailanzeige eines Freundes
   margin-top: 55%;
   margin-left: 32.5%
 }
-
+#plus:hover{
+  border: 5px solid white;
+  border-radius: 35px; 
+}
 
 
 
