@@ -120,3 +120,26 @@ Grundsystem der Anwendung
     //     // hier noch die variable übergeben....
     //   )
     // }
+
+
+
+
+
+    // HALIL
+    let realFileBtn = document.getElementById("real-file");
+    let customBtn = document.getElementById("custom-button");
+    let customTxt = document.getElementById("custom-text");
+
+    customBtn.addEventListener("click", function() {
+      realFileBtn.click();
+    });
+
+    realFileBtn.addEventListener("change", function() {
+      if (realFileBtn.value) {
+        customTxt.innerHTML = realFileBtn.value.match(
+          /[\/\\]([\w\d\s\.\-\(\)]+)$/
+        )[1];
+      } else {
+        customTxt.innerHTML = "No file chosen, yet.";
+      }
+    });
