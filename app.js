@@ -31,13 +31,58 @@ function savePerson(){
         lastName: _nachname,
         age: _age,
         email: _email,
-        adress: _adresse,
+        address: _adresse,
         phone: _telefon,
     }
     _daten.push(_person);
 
     console.log(_person);
     console.log(_daten);
+}
+
+
+
+//Funktionen zum anzeigen und verstecken von den verschiedenen Seiten
+function hideDetails() {
+    document.getElementById("detailanzeige").classList.add("hidden");
+}
+
+function showDetails() {
+    document.getElementById("detailanzeige").classList.remove("hidden");
+}
+
+function hideEintrag() {
+    document.getElementById("eintragsseite").classList.add("hidden");
+}
+
+function showEintrag() {
+    document.getElementById("eintragsseite").classList.remove("hidden");
+}
+
+function hideUebersicht() {
+    document.getElementById("uebersicht").classList.add("hidden");
+}
+
+function showUebersicht() {
+    document.getElementById("uebersicht").classList.remove("hidden");
+}
+
+
+
+
+//Funktion zur Aktualisierung der Details auf einen bestimmten Freunde
+function freundAnzeigen(id) {
+
+    document.getElementById("detailVorname").innerHTML = _daten[id].firstName;
+    document.getElementById("detailNachname").innerHTML = _daten[id].lastName;
+    document.getElementById("detailAlter").innerHTML = _daten[id].age;
+    document.getElementById("detailEmail").innerHTML = _daten[id].email;
+    document.getElementById("detailAdresse").innerHTML = _daten[id].address;
+    document.getElementById("detailTel").innerHTML = _daten[id].phone;
+
+    showDetails();
+    hideEintrag();
+    hideUebersicht();
 }
 
 
