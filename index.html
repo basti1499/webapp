@@ -25,7 +25,7 @@
       <!--lol rekt bitch-->
 
         <nav class="navbar navbar-dark bg-dark fixed-top">
-            <a class=" navbar-brand logo">Mein Freundebuch</a>
+            <a class=" navbar-brand logo" id="title">Mein Freundebuch</a>
             <form class="form-inline">
                 <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
                 <a class="settings" href="#settings"><img src="Bilder/einstellungen.png" /></a>
@@ -63,7 +63,7 @@
                 <div class="col-lg-3" id="cards">
                   <a href="bestimmterFreund">
                   <div class="rahmen">
-                    <label id="name">Basti Oeczelik</label>
+                    <label id="name"></label>
                      <img class="polaroid" src="Bilder/boy.png" alt="Profilbild">
                   </div>
                   </a>
@@ -244,7 +244,7 @@
                         <div class ="row">
                             <div class="col-lg">
                                 <p class="submitbutton">
-                                    <a id="submit" href="#">Speichern</a>
+                                    <button id="submit" onclick="savePerson()" class="button">Speichern</button>
                                 </p>
                             </div>
                         </div>
@@ -265,15 +265,12 @@
                             <div class="col-lg-1 col-xs-1"></div>
                             <div class="col-lg col-xs">
                             <p class="uploadbutton">
-<<<<<<< HEAD
-                                <a id="upload" href="#">Bild hochladen</a>
-=======
-                                
+
+
                                 <input type="file" id="real-file" hidden="hidden" />
-                                <button type="button" class="button"id="custom-button">Bild hochladen</button>
+                                <button type="button" class="button"id="upload" onclick="imageupload()">Bild hochladen</button>
                                 <span id="custom-text">No file chosen, yet.</span>
 
->>>>>>> 5aeef653278861933c25fe75534c6575cd8eec16
                             </p>
                             </div>
                             <div class="col-lg-1 col-xs-1"></div>

@@ -1,5 +1,4 @@
 
-
 /*
 Grundsystem der Anwendung
 */
@@ -68,13 +67,13 @@ Grundsystem der Anwendung
       console.log(newDivText);
       console.log(newDiv);
       newDiv.appendChild(newDivText);
-      document.getElementById()
+      //document.getElementById()
 
       let pola = document.querySelector("#neuerFreund");
       console.log(pola);
       let pBild = document.querySelector(".polar");
       console.log(pBild);
-      let .polar.insertBefore(newDiv,pBild);
+      //let .polar.insertBefore(newDiv,pBild);
 
   // }
 
@@ -121,25 +120,55 @@ Grundsystem der Anwendung
     //   )
     // }
 
+ // HALIL CONTAINER FÜR HINZUFÜGEN EINES NEUEN FREUNDES WENN DIE EINGABEN VOLLSTÄNDIG UND KORREKT SIND
+
+ let person = {
+     firstName: "",
+     lastName: "",
+     age: "",
+     email: "",
+     adress: "",
+     phone: "",
+ }
+let array = [person];
+
+
+
+// const bu = document.getElementById("submit");
+// console.log(bu);
+// bu.addEventListener("click", savePerson);
+
+
+function savePerson(){
+let vorname = document.getElementById("firstname").value;
+let nachname = document.getElementById("lastname").value;
+let email = document.getElementById("email").value;
+let adresse = document.getElementById("address").value;
+let telefon = document.getElementById("phone").value;
+
+
+document.getElementById("name").innerHTML =  testname;
+console.log("ich war hier");
+}
 
 
 
 
-    // HALIL
-    let realFileBtn = document.getElementById("real-file");
-    let customBtn = document.getElementById("custom-button");
-    let customTxt = document.getElementById("custom-text");
-
-    customBtn.addEventListener("click", function() {
-      realFileBtn.click();
-    });
-
-    realFileBtn.addEventListener("change", function() {
-      if (realFileBtn.value) {
-        customTxt.innerHTML = realFileBtn.value.match(
-          /[\/\\]([\w\d\s\.\-\(\)]+)$/
-        )[1];
-      } else {
-        customTxt.innerHTML = "No file chosen, yet.";
-      }
-    });
+    // HALIL BILD HOCHLADEN
+    // let realFileBtn = document.getElementById("real-file");
+    // let customBtn = document.getElementById("custom-button");
+    // let customTxt = document.getElementById("custom-text");
+    //
+    // customBtn.addEventListener("click", function() {
+    //   realFileBtn.click();
+    // });
+    //
+    // realFileBtn.addEventListener("change", function() {
+    //   if (realFileBtn.value) {
+    //     customTxt.innerHTML = realFileBtn.value.match(
+    //       /[\/\\]([\w\d\s\.\-\(\)]+)$/
+    //     )[1];
+    //   } else {
+    //     customTxt.innerHTML = "No file chosen, yet.";
+    //   }
+    // });
