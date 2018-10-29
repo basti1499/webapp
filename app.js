@@ -5,7 +5,6 @@
 
 
 //Array für die Objekte der Personen
-
 let _daten = [];
 
 
@@ -18,13 +17,14 @@ function savePerson(){
     let _email = document.getElementById("email").value;
     let _adresse = document.getElementById("address").value;
     let _telefon = document.getElementById("phone").value;
-    let _person = {
+    var _person = {
         firstName: _vorname,
         lastName: _nachname,
         age: _age,
         email: _email,
         address: _adresse,
         phone: _telefon,
+        img: ""
     }
     _daten.push(_person);
 
@@ -35,10 +35,33 @@ function savePerson(){
 
 //Funktion zum Bild hochladen
 function imageUpload(){
+    document.getElementById("fileInput").click();
+    let fileDisplayArea = document.getElementById('fileDisplayArea');
+    fileInput.addEventListener('change', function(e) {
+       var file = fileInput.files[0];
+       var imageType = /image.*/;
 
-<<<<<<< HEAD
-}
-=======
+       if (file.type.match(imageType)) {
+           var reader = new FileReader();
+           reader.onload = function(e) {
+            //   fileDisplayArea.innerHTML = "";
+               // var img = new Image();
+               // img.src = reader.result;
+               document.getElementById("uploadImage").src = reader.result;
+              // fileDisplayArea.appendChild(img);
+           }
+           reader.readAsDataURL(file);
+       } else {
+          // fileDisplayArea.innerHTML = "File not supported!"
+       }
+   });
+    //Bild zum Objekt im Array hinzugüfen
+    _daten.push(_person.img = reader.result);
+    console.log(_daten);
+     }
+
+
+
 //Funktionen zum anzeigen und verstecken von den verschiedenen Seiten
 function hideDetails() {
     document.getElementById("detailanzeige").classList.add("hidden");
@@ -84,7 +107,6 @@ function freundAnzeigen(id) {
 
 
 
->>>>>>> 9488efb995caa8e034d4268e10bf07d01fb93181
 
 
 // */
