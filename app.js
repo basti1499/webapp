@@ -69,6 +69,8 @@ function hideDetails() {
 
 function showDetails() {
     document.getElementById("detailanzeige").classList.remove("hidden");
+    hideEintrag();
+    hideUebersicht();
 }
 
 function hideEintrag() {
@@ -77,14 +79,18 @@ function hideEintrag() {
 
 function showEintrag() {
     document.getElementById("eintragsseite").classList.remove("hidden");
+    hideDetails();
+    hideUebersicht();
 }
 
 function hideUebersicht() {
-    document.getElementById("uebersicht").classList.add("hidden");
+    document.getElementById("uebersicht2").classList.add("hidden");
 }
 
 function showUebersicht() {
-    document.getElementById("uebersicht").classList.remove("hidden");
+    document.getElementById("uebersicht2").classList.remove("hidden");
+    hideDetails();
+    hideEintrag();
 }
 
 
@@ -104,9 +110,6 @@ function freundAnzeigen(id) {
     hideEintrag();
     hideUebersicht();
 }
-
-
-
 
 
 // */
