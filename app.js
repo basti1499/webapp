@@ -2,15 +2,7 @@
 // /*
 // Grundsystem der Anwendung
 
-//Objekt für die Person
- let person = {
-     firstName: "",
-     lastName: "",
-     age: "",
-     email: "",
-     adress: "",
-     phone: "",
- }
+
 
 //Array für die Objekte der Personen
 
@@ -41,7 +33,10 @@ function savePerson(){
 }
 
 
+//Funktion zum Bild hochladen
+function imageUpload(){
 
+}
 
 
 // */
