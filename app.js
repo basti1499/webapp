@@ -88,11 +88,6 @@ function imageUpload(){
     console.log(_daten);
      }
 
-//Zurückbutton Logik
-function goBacktoPage(){
-    showUebersicht();
-}
-
 //Funktionen zum anzeigen und verstecken von den verschiedenen Seiten
 function hideDetails() {
     document.getElementById("detailanzeige").classList.add("hidden");
@@ -115,11 +110,11 @@ function showEintrag() {
 }
 
 function hideUebersicht() {
-    document.getElementById("uebersicht2").classList.add("hidden");
+    document.getElementById("uebersicht").classList.add("hidden");
 }
 
 function showUebersicht() {
-    document.getElementById("uebersicht2").classList.remove("hidden");
+    document.getElementById("uebersicht").classList.remove("hidden");
     hideDetails();
     hideEintrag();
 }
