@@ -60,6 +60,8 @@ function savePerson(){
 
     _daten.push(_person);
 
+    showUebersicht();
+
     console.log(_person);
     console.log(_daten);
 }
