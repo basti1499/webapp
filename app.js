@@ -90,7 +90,7 @@ function imageUpload(){
 
 //Zurückbutton Logik
 function goBacktoPage(){
-    showUebersicht(); 
+    showUebersicht();
 }
 
 //Funktionen zum anzeigen und verstecken von den verschiedenen Seiten
