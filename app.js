@@ -7,25 +7,57 @@
 //Array für die Objekte der Personen
 let _daten = [];
 
+//Vaiable für das hinzuzufügende Bild
+let _uploadedimage = null;
+
+
 
 //Daten von der Eintragsseite in das Array speichern
 function savePerson(){
 
+	// wenn kein Bild hinzugefügt, dann nehme Standardbild
+    if (_uploadedimage == null){
+        _uploadedimage = "Bilder/boy.png";
+    }
+
     let _vorname = document.getElementById("firstname").value;
     let _nachname = document.getElementById("surname").value;
-    let _age = document.getElementById("age").value;
+    let _alter = document.getElementById("age").value;
     let _email = document.getElementById("email").value;
     let _adresse = document.getElementById("address").value;
     let _telefon = document.getElementById("phone").value;
-    var _person = {
+    let _person = {
         firstName: _vorname,
         lastName: _nachname,
-        age: _age,
+        age: _alter,
         email: _email,
         address: _adresse,
         phone: _telefon,
-        img: ""
+        img: _uploadedimage
     }
+
+    //Überprüfungen und Alerts
+    if ( _vorname == null || _vorname == "" || _nachname == null || _nachname == "" || _alter == null || _alter == "" ||
+    _email == null || _email == "" || _adresse == null || _adresse == "" || _telefon == null || _telefon == "") {
+        alert("Bitte alle Felder ausfüllen!");
+        return;
+    }
+
+    //Überprüfen, dass in Alter eine Nummer steht
+    if (isNaN(_alter)){
+        alert("Bitte eine Zahl für Alter eingeben!");
+        return;
+    }
+
+    //Überprüfen, dass in Telefonnummer
+    if (isNaN(_telefon)){
+        alert("Bitte eine Nummer für Telefonnummer eingeben!");
+        return;
+    }
+
+    //Überprüfen der Mail
+
+
     _daten.push(_person);
 
     console.log(_person);
@@ -44,23 +76,22 @@ function imageUpload(){
        if (file.type.match(imageType)) {
            var reader = new FileReader();
            reader.onload = function(e) {
-            //   fileDisplayArea.innerHTML = "";
-               // var img = new Image();
-               // img.src = reader.result;
                document.getElementById("uploadImage").src = reader.result;
-              // fileDisplayArea.appendChild(img);
+               //Bild in die Variable für Objekt und Array schreiben
+               _uploadedimage = reader.result;
            }
            reader.readAsDataURL(file);
        } else {
-          // fileDisplayArea.innerHTML = "File not supported!"
+          alert("Dateiformat wird nicht unterstützt!");
        }
    });
-    //Bild zum Objekt im Array hinzugüfen
-    _daten.push(_person.img = reader.result);
     console.log(_daten);
      }
 
-
+//Zurückbutton Logik
+function goBacktoPage(){
+    showUebersicht(); 
+}
 
 //Funktionen zum anzeigen und verstecken von den verschiedenen Seiten
 function hideDetails() {
