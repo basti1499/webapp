@@ -227,15 +227,30 @@ Detailanzeige eines Freundes
 
 .card img {
     max-width: 100%;
+    border: 2px solid black;
 }
 
 .card p {
     font-size: 15px;
     font-weight: bold;
     margin-top: 10px;
+    color: black;
+}
+
+.cardLink a {
+    text-decoration: none;
+
 }
 
 .pluscard {
     background: transparent;
     border: none;
+}
+
+.pluscard img {
+    border: none;
+}
+
+.pluscard:hover {
+    transform: scale(1.2);
 }
