@@ -116,6 +116,9 @@ function hideUebersicht() {
 }
 
 function showUebersicht() {
+    while (document.getElementById("uebersichtRow").firstChild.id !== "pluscard") {
+        document.getElementById("uebersichtRow").removeChild(document.getElementById("uebersichtRow").firstChild);
+    }
     polaroidSchablone();
     document.getElementById("uebersicht").classList.remove("hidden");
     hideDetails();
@@ -134,10 +137,17 @@ function freundAnzeigen(id) {
     document.getElementById("detailEmail").innerHTML = _daten[id].email;
     document.getElementById("detailAdresse").innerHTML = _daten[id].address;
     document.getElementById("detailTel").innerHTML = _daten[id].phone;
+    document.getElementById("detailanzeige").innerHTML = document.getElementById("detailanzeige").innerHTML.replace("$ID$", id);
 
     showDetails();
 }
 
+function freundEntfernen(id) {
+    delete _daten[id];
+    showUebersicht();
+}
+
+//Funktion die alle Freunde aus dem _daten-Array lädt und in die Übersicht einfügt
 function polaroidSchablone() {
 
     let template = document.getElementById("cardTemplate").innerHTML;
@@ -146,12 +156,14 @@ function polaroidSchablone() {
 
         let dummy = document.createElement("div");
         dummy.classList.add("col-lg-3");
+        dummy.classList.add("cardLink");
 
         dummy.innerHTML = template;
 
         dummy.innerHTML = dummy.innerHTML.replace("$VORNAME$", _daten[i].firstName);
         dummy.innerHTML = dummy.innerHTML.replace("$NACHNAME$", _daten[i].lastName);
         dummy.innerHTML = dummy.innerHTML.replace("$ID$", i);
+        dummy.innerHTML = dummy.innerHTML.replace("Bilder/boy.png", _daten[i].img);
 
         //Vor dem Plus einfügen
         document.getElementById("uebersichtRow").insertBefore(dummy, document.getElementById("pluscard"));
