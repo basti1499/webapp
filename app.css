@@ -41,7 +41,6 @@ Header
     text-shadow: 2px 2px 0px rgba(0,0,0,0.2), 4px 4px 8px rgba(0,0,0,0.2);
     font-size: 50px;
     font-weight: bold;
-    cursor: pointer;
 }
 
 /*Settings Icon*/
@@ -209,7 +208,7 @@ Detailanzeige eines Freundes
   margin-top: 10%;
 }
 
-#plus{
+/* #plus{
   max-width: 90px;
   max-height: 90px;
   margin-top: 55%;
@@ -218,7 +217,7 @@ Detailanzeige eines Freundes
 #plus:hover{
   border: 5px solid white;
   border-radius: 35px;
-}
+} */
 
 .card {
     padding: 10%;
@@ -228,60 +227,15 @@ Detailanzeige eines Freundes
 
 .card img {
     max-width: 100%;
-    border: 2px solid black;
 }
 
 .card p {
     font-size: 15px;
     font-weight: bold;
     margin-top: 10px;
-    color: black;
-}
-
-.cardLink a {
-    text-decoration: none;
-
 }
 
 .pluscard {
     background: transparent;
     border: none;
 }
-
-.pluscard img {
-    border: none;
-}
-
-.pluscard:hover {
-    transform: scale(1.2);
-}
-
-
-
-/*
-Seite zum Hinzufügen eines neuen Freundes
-*/
-
-/*Container für den Eintrag der Freunde*/
-/*
-input {
-    background: transparent;
-    font-size: 25px;
-    border: none;
-    border-bottom: 2px solid #000000;
-}
-
-.addpicture{
-    text-align: center;
-
-}
-.page img {
-    display: block;
-    margin-top:40%
-    margin-left: auto;
-    margin-right: auto;
-    width: 60%;
-}
-
-
-}*/
