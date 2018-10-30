@@ -38,77 +38,38 @@
 
             <!-- Freunde-Schablone in Form von Templates -->
 
-
-
-
-
-
-            <!-- Hier die Freundeübersicht -->
-            <div class="container-fluid page" id="uebersicht">
-              <h1>Hier findest du deine Freunde :)</h1>
-              <div class="row" id="freunde">
-
-                <!-- <template id="neuerFreund"> -->
-                  <div class="col-lg-3" id="neuerFreund">
-                    <a href="bestimmterFreund">
-                    <div class="rahmen">
-                       <!-- <label class="name" id="freundName">huhu</label> -->
-                       <img class="polaroid" id="polar" src="Bilder/boy.png" alt="Profilbild">
+            <template id="cardTemplate">
+                <a href="#" onclick="freundAnzeigen($ID$)">
+                    <div class="card">
+                        <img src="Bilder/boy.png" alt="">
+                        <p>$VORNAME$ $NACHNAME$</p>
                     </div>
-                    </a>
-                  </div>
-                <!-- </template> -->
+                </a>
+            </template>
 
-                <div class="col-lg-3" id="cards">
-                  <a href="bestimmterFreund">
-                  <div class="rahmen">
-                    <label id="name"></label>
-                     <img class="polaroid" src="Bilder/boy.png" alt="Profilbild">
-                  </div>
-                  </a>
+            <div id="uebersicht" class="container-fluid page" style="background: transparent">
+                <div id="uebersichtRow" class="row">
+                    <div class="col-lg-3">
+                        <div class="card">
+                            <img src="Bilder/boy.png" alt="">
+                            <p>Vorname Nachname</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="card">
+                            <img src="Bilder/boy.png" alt="">
+                            <p>Vorname Nachname</p>
+                        </div>
+                    </div>
+                    <div id="pluscard" class="col-lg-3">
+                        <a href="#" onclick="showEintrag()">
+                            <div class="card pluscard">
+                                <img src="Bilder/plus.png" alt="">
+                            </div>
+                        </a>
+
+                    </div>
                 </div>
-
-                <div class="col-lg-3" id="cards">
-                  <a href="bestimmterFreund">
-                  <div class="rahmen">
-                     <img class="polaroid" src="Bilder/boy.png" alt="Profilbild">
-                     <label id="name2">Basti Oeczelikkkkkkkkkkkkkkkkkkkkkkkkk</label>
-                  </div>
-                  </a>
-                </div>
-
-                <div class="col-lg-3" id="cards">
-                  <a href="bestimmterFreund">
-                  <div class="rahmen">
-                     <img class="polaroid" src="Bilder/boy.png" alt="Profilbild">
-                  </div>
-                  </a>
-                </div>
-
-                <div class="col-lg-3" id="cards">
-                  <a href="bestimmterFreund">
-                  <div class="rahmen">
-                     <img class="polaroid" src="Bilder/boy.png" alt="Profilbild">
-                  </div>
-                  </a>
-                </div>
-
-                <div class="col-lg-3" id="cards">
-                  <a href="bestimmterFreund">
-                  <div class="rahmen">
-                     <img class="polaroid" src="Bilder/boy.png" alt="Profilbild">
-                  </div>
-                  </a>
-                </div>
-
-                <div class="col-lg-3" id="cards">
-                  <div class="plus">
-                     <a class="add" href="#eintragsseite"/><img id="plus" src="Bilder/plus.png" alt="Plusbutton" /></a>
-                  </div>
-                </div>
-
-              </div>
-
             </div>
 
 

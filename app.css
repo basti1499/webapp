@@ -219,6 +219,26 @@ Detailanzeige eines Freundes
   border-radius: 35px;
 }
 
+.card {
+    padding: 10%;
+    width: 100%;
+    border: 5px solid black;
+}
+
+.card img {
+    max-width: 100%;
+}
+
+.card p {
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.pluscard {
+    background: transparent;
+    border: none;
+}
 
 
 

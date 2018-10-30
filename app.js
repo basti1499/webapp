@@ -135,8 +135,26 @@ function freundAnzeigen(id) {
     document.getElementById("detailTel").innerHTML = _daten[id].phone;
 
     showDetails();
-    hideEintrag();
-    hideUebersicht();
+}
+
+function polaroidSchablone() {
+
+    let template = document.getElementById("cardTemplate").innerHTML;
+
+    for (i in _daten) {
+
+        let dummy = document.createElement("div");
+        dummy.classList.add("col-lg-3");
+
+        dummy.innerHTML = template;
+
+        dummy.innerHTML = dummy.innerHTML.replace("$VORNAME$", _daten[i].firstName);
+        dummy.innerHTML = dummy.innerHTML.replace("$NACHNAME$", _daten[i].lastName);
+        dummy.innerHTML = dummy.innerHTML.replace("$ID$", i);
+
+        //Vor dem Plus einfügen
+        document.getElementById("uebersichtRow").insertBefore(dummy, document.getElementById("pluscard"));
+    }
 }
 
 
@@ -169,36 +187,7 @@ function freundAnzeigen(id) {
 //     //     nameStyle.style.fontSize = "0.3em";
 //     // }
 //     //
-//     let freund = ["karl","napf","47","knapf@gmx.de","sandweg1","8323"];
-//     console.log(freund);
-//
-//     // DackelStyle
-//   // let dackelStyle = () => {
-//       let newDiv = document.createElement("div");
-//       newDiv.className = "col-lg-3";
-//       newDiv.id = "cards";
-//
-//         let newAnk = document.createElement("a");
-//         newAnk.href = "bestimmterFreund";
-//
-//         let newDiv2 = document.createElement("div");
-//         newDiv2.class = "rahmen";
-//
-//           let newLabel = document.createElement("label");
-//           newLabel.id = "name";
-//
-//           let newBild = document.createElement("img");
-//           newBild.className = "polaroid";
-//           newBild.src = "Bilder/boy.png";
-//
-//           //nun alles Verschachteln und anfügen
-//           newLabel.appendChild(newBild);
-//           newDiv2.appendChild(newLabel);
-//           newAnk.appendChild(newDiv2);
-//           newDiv.appendChild(newAnk);
-//
-//           console.log(newDiv);
-//
+
 //
 //
 //       // hier kommt noch die Referenz auf den eingegebenen Namen in die Methode.
