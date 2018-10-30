@@ -21,8 +21,7 @@
     <body>
 
 
-      <!--NAVIGATIOOOOOOOOON mit fixer Navbar--->
-      <!--lol rekt bitch-->
+      <!--vNavbarv--->
 
         <nav class="navbar navbar-dark bg-dark">
             <a class="img-fluid navbar-brand logo" onclick="showUebersicht()" id="title">Mein Freundebuch</a>
@@ -37,16 +36,16 @@
             <!--HIER KOMMT DER CONTENT REIN-->
 
             <!-- Freunde-Schablone in Form von Templates -->
-
             <template id="cardTemplate">
                 <a href="#" onclick="freundAnzeigen($ID$)">
                     <div class="card">
-                        <img src="Bilder/boy.png" alt="">
+                        <img src="Bilder/boy.png" alt="" width="300" height="250">
                         <p>$VORNAME$ $NACHNAME$</p>
                     </div>
                 </a>
             </template>
 
+            <!-- Plus-icon zum Hinzufügen eines neuen Freundes -->
             <div id="uebersicht" class="container-fluid page" style="background: transparent">
                 <div id="uebersichtRow" class="row">
                     <div id="pluscard" class="col-lg-3">

@@ -178,10 +178,6 @@ Detailanzeige eines Freundes
 	border-radius: 25px;
 }
 
-
-
-
-
 .polaroid {
   border: 10px solid black;
   background: white;
@@ -208,30 +204,22 @@ Detailanzeige eines Freundes
   margin-top: 10%;
 }
 
-/* #plus{
-  max-width: 90px;
-  max-height: 90px;
-  margin-top: 55%;
-  margin-left: 32.5%
-}
-#plus:hover{
-  border: 5px solid white;
-  border-radius: 35px;
-} */
 
 .card {
     padding: 10%;
     width: 100%;
-    border: 5px solid black;
+    border: 10px solid grey;
+    margin-top: 10%;
 }
 
 .card img {
     max-width: 100%;
-    border: 2px solid black;
+    max-height: 100%;
+    border: 7.5px solid grey;
 }
 
 .card p {
-    font-size: 15px;
+    font-size: 1.5em;
     font-weight: bold;
     margin-top: 10px;
     color: black;
