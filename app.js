@@ -116,6 +116,7 @@ function hideUebersicht() {
 }
 
 function showUebersicht() {
+    polaroidSchablone();
     document.getElementById("uebersicht").classList.remove("hidden");
     hideDetails();
     hideEintrag();
