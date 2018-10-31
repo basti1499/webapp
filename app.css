@@ -190,24 +190,22 @@ Detailanzeige eines Freundes
     max-width: 100%;
     max-height: 100%;
     border: 7.5px solid grey;
-    object-fit: cover;
 }
 
 .card p {
     font-size: 1.55em;
     font-weight: bold;
-    margin-top: 10%;
     color: black;
 }
 
 .cardLink a {
     text-decoration: none;
-
 }
 
 .pluscard {
     background: transparent;
     border: none;
+
 }
 
 .pluscard img {

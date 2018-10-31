@@ -35,17 +35,18 @@
 
             <!--HIER KOMMT DER CONTENT REIN-->
 
-            <!-- Freunde-Schablone in Form von Templates , Template beinhaltet HTML-code ohne ihn anzuzeigen-->
+            <!-- Freunde-Schablone in Form von Templates-->
             <template id="cardTemplate">
                 <a href="#" onclick="freundAnzeigen($ID$)">
                     <div class="card" >
-                        <img src="Bilder/boy.png" alt="">
-                        <p>$VORNAME$ $NACHNAME$</p>
+                        <img src="Bilder/boy.png" alt="" height=" 200" width="200">
+                        <p id ="p1">$VORNAME$</p>
+                        <p id ="p2">$NACHNAME$</p>
                     </div>
                 </a>
             </template>
 
-            <!-- Plus-icon zum Hinzufügen eines neuen Freundes lg (for laptops and desktops - screens equal to or greater than 1200px wide) Rows must be placed within a .container (fixed-width) or .container-fluid (full-width) for proper alignment and padding -->
+            <!-- Plus-icon zum Hinzufügen eines neuen Freundes -->
             <div id="uebersicht" class="container-fluid page" style="background: transparent">
                 <div id="uebersichtRow" class="row">
                     <div id="pluscard" class="col-lg-3"> <!-- 3 of 12 columns -->
@@ -147,7 +148,7 @@
                                 <p>Vorname:</p>
                             </div>
                             <div class="col-lg-8">
-                            <p><span><input type="text" id="firstname" name="firstname" required/></span></p>
+                            <p><span><input type="text" id="firstname" name="firstname" maxlength="12" required/></span></p>
                             </div>
                         </div>
                         <div class="row infos">
@@ -155,7 +156,7 @@
                                 <p>Nachname:</p>
                             </div>
                             <div class="col-lg-8">
-                                <p><span><input type="text" id="surname" name="surname" required/></span></p>
+                                <p><span><input type="text" id="surname" name="surname" maxlength="12" required/></span></p>
                             </div>
                         </div>
                         <div class="row infos">
