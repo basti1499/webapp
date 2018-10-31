@@ -184,31 +184,6 @@ Detailanzeige eines Freundes
     color: white;
 }
 
-.polaroid {
-  border: 10px solid black;
-  background: white;
-  max-width: 100%
-}
-.rahmen{
-  margin-top: 10%;
-  padding: 10% 10% 15% 10%;
-  border: 10px solid grey;
-  background: white;
-}
-#name{
-  font-family: sans-serif;
-  font-weight: bold;
-  font-size: 1.55em;
-  color: black;
-  margin-bottom: 5%;
-}
-#name2{
-  font-family: sans-serif;
-  font-weight: bold;
-  font-size: 1.55em;
-  color: black;
-  margin-top: 10%;
-}
 
 
 .card {
@@ -218,7 +193,7 @@ Detailanzeige eines Freundes
     margin-top: 10%;
 }
 
-.card img {
+.card img{
     max-width: 100%;
     max-height: 100%;
     border: 7.5px solid grey;
