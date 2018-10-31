@@ -109,6 +109,7 @@ function showEintrag() {
     document.getElementById("eintragsseite").classList.remove("hidden");
     hideDetails();
     hideUebersicht();
+    clearForm();
 }
 
 function hideUebersicht() {
@@ -123,6 +124,16 @@ function showUebersicht() {
     document.getElementById("uebersicht").classList.remove("hidden");
     hideDetails();
     hideEintrag();
+}
+
+function clearForm(){
+    document.getElementById("firstname").value = "";
+    document.getElementById("surname").value = "";
+    document.getElementById("age").value = "";
+    document.getElementById("email").value = "";
+    document.getElementById("address").value = "";
+    document.getElementById("phone").value = "";
+    document.getElementById("uploadImage").src = "Bilder/boy.png";
 }
 
 
