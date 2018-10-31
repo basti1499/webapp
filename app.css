@@ -142,14 +142,7 @@ Detailanzeige eines Freundes
 
 }
 
-#eintragsseite .uploadbutton {
-    text-align: center;
-    margin: 20px;
-    font-size: 25px;
-}
-
-
-#eintragsseite .submitbutton {
+#eintragsseite .pbutton {
     text-align: center;
     margin: 20px;
     font-size: 25px;

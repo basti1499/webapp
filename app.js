@@ -128,6 +128,7 @@ function showUebersicht() {
     hideEintrag();
 }
 
+//Funktion zum Löschen der Daten von vorherigem Eintrag in der Eintragsseite
 function clearForm(){
     document.getElementById("firstname").value = "";
     document.getElementById("surname").value = "";
@@ -137,9 +138,6 @@ function clearForm(){
     document.getElementById("phone").value = "";
     document.getElementById("uploadImage").src = "Bilder/boy.png";
 }
-
-
-
 
 //Funktion zur Aktualisierung der Details auf einen bestimmten Freunde
 function freundAnzeigen(id) {
