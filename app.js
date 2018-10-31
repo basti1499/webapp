@@ -114,16 +114,13 @@ function showEintrag() {
 
 function hideUebersicht() {
     document.getElementById("uebersicht").classList.add("hidden");
-    document.getElementById("searchBar").classList.add("hidden");
+    document.getElementById("options").classList.add("hidden");
 }
 
 function showUebersicht() {
-    while (document.getElementById("uebersichtRow").firstChild.id !== "pluscard") {
-        document.getElementById("uebersichtRow").removeChild(document.getElementById("uebersichtRow").firstChild);
-    }
     polaroidSchablone();
     document.getElementById("uebersicht").classList.remove("hidden");
-    document.getElementById("searchBar").classList.remove("hidden");
+    document.getElementById("options").classList.remove("hidden");
     hideDetails();
     hideEintrag();
 }
@@ -162,23 +159,29 @@ function freundEntfernen(id) {
 //Funktion die alle Freunde aus dem _daten-Array lädt und in die Übersicht einfügt
 function polaroidSchablone() {
 
+    while (document.getElementById("uebersichtRow").firstChild.id !== "pluscard") {
+        document.getElementById("uebersichtRow").removeChild(document.getElementById("uebersichtRow").firstChild);
+    }
+
     let template = document.getElementById("cardTemplate").innerHTML; //lädt das Innere von template in die variable
 
     for (i in _daten) {
 
-        let dummy = document.createElement("div");
-        dummy.classList.add("col-lg-3");
-        dummy.classList.add("cardLink");
+        if (_daten[i].firstName.concat(" ", _daten[i].lastName).search(document.getElementById("searchBar").value) != -1) {
+            let dummy = document.createElement("div");
+            dummy.classList.add("col-lg-3");
+            dummy.classList.add("cardLink");
 
-        dummy.innerHTML = template;
+            dummy.innerHTML = template;
 
-        dummy.innerHTML = dummy.innerHTML.replace("$VORNAME$", _daten[i].firstName); //replacemethode würde nur string zurückliefern
-        dummy.innerHTML = dummy.innerHTML.replace("$NACHNAME$", _daten[i].lastName);
-        dummy.innerHTML = dummy.innerHTML.replace("$ID$", i);
-        dummy.innerHTML = dummy.innerHTML.replace("Bilder/boy.png", _daten[i].img);
+            dummy.innerHTML = dummy.innerHTML.replace("$VORNAME$", _daten[i].firstName); //replacemethode würde nur string zurückliefern
+            dummy.innerHTML = dummy.innerHTML.replace("$NACHNAME$", _daten[i].lastName);
+            dummy.innerHTML = dummy.innerHTML.replace("$ID$", i);
+            dummy.innerHTML = dummy.innerHTML.replace("Bilder/boy.png", _daten[i].img);
 
-        //Vor dem Plus einfügen
-        document.getElementById("uebersichtRow").insertBefore(dummy, document.getElementById("pluscard"));
+            //Vor dem Plus einfügen
+            document.getElementById("uebersichtRow").insertBefore(dummy, document.getElementById("pluscard"));
+        }
     }
 }
 

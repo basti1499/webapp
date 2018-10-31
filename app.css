@@ -205,7 +205,11 @@ Detailanzeige eines Freundes
 .pluscard {
     background: transparent;
     border: none;
+<<<<<<< HEAD
 
+=======
+    transition: all 0.5s;
+>>>>>>> 94893d2873bd43c6c2243d535d68a599dfc829cf
 }
 
 .pluscard img {
