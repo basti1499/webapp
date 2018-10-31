@@ -9,6 +9,7 @@ body {
     background-attachment: fixed;
     background-position: center center;
     margin: 0;
+    min-width: 300px;
 }
 
 .hidden {
@@ -67,6 +68,29 @@ Header
     float: right;
     display: flex;
     flex-wrap: wrap;
+}
+
+@media (max-width: 767.98px) {
+  .navbar a.logo {
+    float: left;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font: 400 100px/1.2 'Leckerli One', Helvetica, sans-serif;
+    text-shadow: 2px 2px 0px rgba(0,0,0,0.2), 4px 4px 8px rgba(0,0,0,0.2);
+    font-size: 25px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  .navbar input[type=text] {
+      padding: 3px;
+      border: none;
+      font-size: 8px;
+      width: 175px;
+  }
+  #searchBar {
+    max-width: 50%;
+  }
 }
 
 /*
@@ -198,6 +222,7 @@ Detailanzeige eines Freundes
     font-size: 1.55em;
     font-weight: bold;
     color: black;
+    margin-bottom: 0.1px;
 }
 
 .cardLink a {
