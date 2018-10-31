@@ -137,7 +137,8 @@ function freundAnzeigen(id) {
     document.getElementById("detailEmail").innerHTML = _daten[id].email;
     document.getElementById("detailAdresse").innerHTML = _daten[id].address;
     document.getElementById("detailTel").innerHTML = _daten[id].phone;
-    document.getElementById("detailanzeige").innerHTML = document.getElementById("detailanzeige").innerHTML.replace("$ID$", id);
+    //document.getElementById("detailanzeige").innerHTML = document.getElementById("detailanzeige").innerHTML.replace("$ID$", id); // Fehler, löschen
+    document.getElementById("delButton").setAttribute("onclick", "freundEntfernen(" + id + ")");
 
     showDetails();
 }
