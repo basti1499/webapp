@@ -114,6 +114,7 @@ function showEintrag() {
 
 function hideUebersicht() {
     document.getElementById("uebersicht").classList.add("hidden");
+    document.getElementById("searchBar").classList.add("hidden");
 }
 
 function showUebersicht() {
@@ -122,6 +123,7 @@ function showUebersicht() {
     }
     polaroidSchablone();
     document.getElementById("uebersicht").classList.remove("hidden");
+    document.getElementById("searchBar").classList.remove("hidden");
     hideDetails();
     hideEintrag();
 }
@@ -148,6 +150,7 @@ function freundAnzeigen(id) {
     document.getElementById("detailEmail").innerHTML = _daten[id].email;
     document.getElementById("detailAdresse").innerHTML = _daten[id].address;
     document.getElementById("detailTel").innerHTML = _daten[id].phone;
+    document.getElementById("detailBild").src = _daten[id].img;
     document.getElementById("delButton").setAttribute("onclick", "freundEntfernen(" + id + ")");
 
     showDetails();
