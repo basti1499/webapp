@@ -24,7 +24,7 @@
       <!--vNavbarv--->
 
         <nav class="navbar navbar-dark bg-dark">
-            <a class="img-fluid navbar-brand logo" onclick="showUebersicht()" id="title">Mein Freundebuch</a>
+            <a class="img-fluid navbar-brand logo " onclick="showUebersicht()" id="title">Mein Freundebuch</a>
             <form class="form-inline">
                 <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
                 <a class="settings" href="#settings"><img src="Bilder/einstellungen.png" /></a>
@@ -35,20 +35,20 @@
 
             <!--HIER KOMMT DER CONTENT REIN-->
 
-            <!-- Freunde-Schablone in Form von Templates -->
+            <!-- Freunde-Schablone in Form von Templates , Template beinhaltet HTML-code ohne ihn anzuzeigen-->
             <template id="cardTemplate">
                 <a href="#" onclick="freundAnzeigen($ID$)">
-                    <div class="card">
-                        <img src="Bilder/boy.png" alt="" width="300" height="250">
+                    <div class="card" >
+                        <img src="Bilder/boy.png" alt="">
                         <p>$VORNAME$ $NACHNAME$</p>
                     </div>
                 </a>
             </template>
 
-            <!-- Plus-icon zum Hinzufügen eines neuen Freundes -->
+            <!-- Plus-icon zum Hinzufügen eines neuen Freundes lg (for laptops and desktops - screens equal to or greater than 1200px wide) Rows must be placed within a .container (fixed-width) or .container-fluid (full-width) for proper alignment and padding -->
             <div id="uebersicht" class="container-fluid page" style="background: transparent">
                 <div id="uebersichtRow" class="row">
-                    <div id="pluscard" class="col-lg-3">
+                    <div id="pluscard" class="col-lg-3"> <!-- 3 of 12 columns -->
                         <a href="#new" onclick="showEintrag()">
                             <div class="card pluscard">
                                 <img src="Bilder/plus.png" alt="">

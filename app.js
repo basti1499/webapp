@@ -150,7 +150,7 @@ function freundEntfernen(id) {
 //Funktion die alle Freunde aus dem _daten-Array lädt und in die Übersicht einfügt
 function polaroidSchablone() {
 
-    let template = document.getElementById("cardTemplate").innerHTML;
+    let template = document.getElementById("cardTemplate").innerHTML; //lädt das Innere von template in die variable
 
     for (i in _daten) {
 
@@ -160,7 +160,7 @@ function polaroidSchablone() {
 
         dummy.innerHTML = template;
 
-        dummy.innerHTML = dummy.innerHTML.replace("$VORNAME$", _daten[i].firstName);
+        dummy.innerHTML = dummy.innerHTML.replace("$VORNAME$", _daten[i].firstName); //replacemethode würde nur string zurückliefern
         dummy.innerHTML = dummy.innerHTML.replace("$NACHNAME$", _daten[i].lastName);
         dummy.innerHTML = dummy.innerHTML.replace("$ID$", i);
         dummy.innerHTML = dummy.innerHTML.replace("Bilder/boy.png", _daten[i].img);
