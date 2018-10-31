@@ -152,8 +152,16 @@ function freundAnzeigen(id) {
 }
 
 function freundEntfernen(id) {
-    delete _daten[id];
-    showUebersicht();
+    var _check = prompt("Bist du sicher, dass du diesen Freund entfernen möchtest?", "Ja / Nein / Vielleicht");
+    if (_check.toLowerCase() === "ja") {
+        delete _daten[id];
+        showUebersicht();
+    } else if (_check.toLowerCase() === "vielleicht") {
+        alert("Dann überleg es dir nochmal :)");
+        showUebersicht();
+    } else {
+        
+    }
 }
 
 //Funktion die alle Freunde aus dem _daten-Array lädt und in die Übersicht einfügt
