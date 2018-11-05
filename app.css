@@ -204,10 +204,10 @@ Detailanzeige eines Freundes
 
 
 .card {
-    padding: 10%;
+    /* padding: 10%; */
     width: 100%;
     border: 10px solid grey;
-    margin-top: 10%;
+    /* margin-top: 10%; */
 }
 
 .card img{
@@ -215,7 +215,7 @@ Detailanzeige eines Freundes
     max-height: 100%;
     border: 7.5px solid grey;
     object-fit: cover;
-    margin-bottom: 10%;
+    /* margin-bottom: 10%; */
 }
 
 .card p {

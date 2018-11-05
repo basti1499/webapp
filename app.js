@@ -152,8 +152,16 @@ function freundAnzeigen(id) {
 }
 
 function freundEntfernen(id) {
-    delete _daten[id];
-    showUebersicht();
+    var _check = prompt("Bist du sicher, dass du diesen Freund entfernen möchtest?", "Ja / Nein / Vielleicht");
+    if (_check.toLowerCase() === "ja") {
+        delete _daten[id];
+        showUebersicht();
+    } else if (_check.toLowerCase() === "vielleicht") {
+        alert("Dann überleg es dir nochmal :)");
+        showUebersicht();
+    } else {
+        
+    }
 }
 
 //Funktion die alle Freunde aus dem _daten-Array lädt und in die Übersicht einfügt
@@ -167,7 +175,7 @@ function polaroidSchablone() {
 
     for (i in _daten) {
 
-        if (_daten[i].firstName.concat(" ", _daten[i].lastName).search(document.getElementById("searchBar").value) != -1) {
+        if (_daten[i].firstName.concat(" ", _daten[i].lastName).toLowerCase().search(document.getElementById("searchBar").value.toLowerCase()) != -1) {
             let dummy = document.createElement("div");
             dummy.classList.add("col-lg-3");
             dummy.classList.add("cardLink");
