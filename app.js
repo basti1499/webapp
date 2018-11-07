@@ -60,6 +60,8 @@ function savePerson(){
 
     _daten.push(_person);
 
+    saveData();
+
     showUebersicht();
 
     console.log(_person);
@@ -125,6 +127,19 @@ function showUebersicht() {
     hideEintrag();
 }
 
+//Methode zum Speichern des Daten-Arrays im localStorage
+function saveData() {
+    localStorage.setItem("freundebuch", JSON.stringify(_daten));
+    console.log("Saved")
+}
+
+//Methode zum abrufen des Daten-Arrays aus dem localStorage
+function getData() {
+    var retrievedObject = localStorage.getItem("freundebuch");
+    _daten = JSON.parse(retrievedObject);
+    console.log("Retrieved data: ", JSON.parse(retrievedObject));
+}
+
 //Funktion zum Löschen der Daten von vorherigem Eintrag in der Eintragsseite
 function clearForm(){
     document.getElementById("firstname").value = "";
@@ -155,17 +170,21 @@ function freundEntfernen(id) {
     var _check = prompt("Bist du sicher, dass du diesen Freund entfernen möchtest?", "Ja / Nein / Vielleicht");
     if (_check.toLowerCase() === "ja") {
         delete _daten[id];
+        saveData();
         showUebersicht();
     } else if (_check.toLowerCase() === "vielleicht") {
         alert("Dann überleg es dir nochmal :)");
+        saveData();
         showUebersicht();
     } else {
-        
+
     }
 }
 
 //Funktion die alle Freunde aus dem _daten-Array lädt und in die Übersicht einfügt
 function polaroidSchablone() {
+
+    getData();
 
     while (document.getElementById("uebersichtRow").firstChild.id !== "pluscard") {
         document.getElementById("uebersichtRow").removeChild(document.getElementById("uebersichtRow").firstChild);
