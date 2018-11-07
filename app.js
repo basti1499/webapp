@@ -136,7 +136,16 @@ function saveData() {
 //Methode zum abrufen des Daten-Arrays aus dem localStorage
 function getData() {
     var retrievedObject = localStorage.getItem("freundebuch");
-    _daten = JSON.parse(retrievedObject);
+    _daten = (JSON.parse(retrievedObject) == null) ? [] : JSON.parse(retrievedObject);
+
+    // Da geläschte Datensätze momentan als null angezeigt werden müssen diese
+    // erneut aus dem Array gelöscht werden, sonst gibt es eine Fehlermeldung
+    // beim auslesen der Werte
+    for (i in _daten) {
+        if (_daten[i] == null) {
+            delete _daten[i];
+        }
+    }
     console.log("Retrieved data: ", JSON.parse(retrievedObject));
 }
 
@@ -184,7 +193,7 @@ function freundEntfernen(id) {
 //Funktion die alle Freunde aus dem _daten-Array lädt und in die Übersicht einfügt
 function polaroidSchablone() {
 
-    getData();
+    //getData();
 
     while (document.getElementById("uebersichtRow").firstChild.id !== "pluscard") {
         document.getElementById("uebersichtRow").removeChild(document.getElementById("uebersichtRow").firstChild);
