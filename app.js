@@ -158,6 +158,7 @@ function clearForm(){
     document.getElementById("address").value = "";
     document.getElementById("phone").value = "";
     document.getElementById("uploadImage").src = "Bilder/boy.png";
+    _uploadedimage = null; 
 }
 
 //Funktion zur Aktualisierung der Details auf einen bestimmten Freunde
