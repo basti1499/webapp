@@ -158,7 +158,7 @@ function clearForm(){
     document.getElementById("address").value = "";
     document.getElementById("phone").value = "";
     document.getElementById("uploadImage").src = "Bilder/boy.png";
-    _uploadedimage = null; 
+    _uploadedimage = null;
 }
 
 //Funktion zur Aktualisierung der Details auf einen bestimmten Freunde
@@ -194,7 +194,7 @@ function freundEntfernen(id) {
 //Funktion die alle Freunde aus dem _daten-Array lädt und in die Übersicht einfügt
 function polaroidSchablone() {
 
-    //getData();
+    getData();
 
     while (document.getElementById("uebersichtRow").firstChild.id !== "pluscard") {
         document.getElementById("uebersichtRow").removeChild(document.getElementById("uebersichtRow").firstChild);
