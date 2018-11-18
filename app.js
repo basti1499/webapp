@@ -176,18 +176,26 @@ function freundAnzeigen(id) {
     showDetails();
 }
 
+//Funktion zum löschen eines Freundes
 function freundEntfernen(id) {
-    var _check = prompt("Bist du sicher, dass du diesen Freund entfernen möchtest?", "Ja / Nein / Vielleicht");
-    if (_check.toLowerCase() === "ja") {
+    // var _check = prompt("Bist du sicher, dass du diesen Freund entfernen möchtest?", "Ja / Nein / Vielleicht");
+    // if (_check.toLowerCase() === "ja") {
+    //     delete _daten[id];
+    //     saveData();
+    //     showUebersicht();
+    // } else if (_check.toLowerCase() === "vielleicht") {
+    //     alert("Dann überleg es dir nochmal :)");
+    //     saveData();
+    //     showUebersicht();
+    // } else {
+    //
+    // }
+
+    //Bestätigung, ob der Nutzer den Freund wirklich löschen möchte
+    if (confirm("Bist du sicher, dass du " + _daten[id].firstName + " " + _daten[id].lastName + " aus deinen Kontakten löschen möchtest?") == true) {
         delete _daten[id];
         saveData();
         showUebersicht();
-    } else if (_check.toLowerCase() === "vielleicht") {
-        alert("Dann überleg es dir nochmal :)");
-        saveData();
-        showUebersicht();
-    } else {
-
     }
 }
 
